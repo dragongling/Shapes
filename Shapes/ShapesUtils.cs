@@ -1,5 +1,8 @@
 ﻿namespace Shapes
 {
+    /// <summary>
+    /// Wrapper for various shapes methods
+    /// </summary>
     public static class ShapesUtils
     {
         public static double GetTriangleAreaBySides(double a, double b, double c)
