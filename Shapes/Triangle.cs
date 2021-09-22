@@ -7,6 +7,12 @@ namespace Shapes
     {
         double[] SideLengths;
 
+        public bool IsRight { get {
+                Array.Sort(SideLengths);
+                /// You can see the formula <see href="https://www.mathopenref.com/pythagorastheorem.html">here</see>.
+                return Math.Pow(SideLengths[0], 2) + Math.Pow(SideLengths[1], 2) == Math.Pow(SideLengths[2], 2);
+            } }
+
        
         /// <param name="a">A side length of a triangle</param>
         /// <param name="b">B side length of a triangle</param>

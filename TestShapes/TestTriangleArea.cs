@@ -28,5 +28,12 @@ namespace TestShapes
             Assert.Throws<ArgumentException>(() => ShapesUtils.GetTriangleAreaBySides(4, 1, 2));
             Assert.Throws<ArgumentException>(() => ShapesUtils.GetTriangleAreaBySides(2, 4, 1));
         }
+
+        [Fact]
+        public void IsRight_Correct()
+        {
+            Assert.True(new Triangle(3, 4, 5).IsRight);
+            Assert.False(new Triangle(3, 3, 3).IsRight);
+        }
     }
 }
